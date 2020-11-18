@@ -5,3 +5,4 @@
 * Script for start docker with postgres.
 * Login function
 * Logout function 
+* Proxy function

@@ -13,11 +13,9 @@ router.route('/')
     })
     .post((request, response) => {
         const { username, password } = request.body;
-        console.log(request.body);
 
         db.one("SELECT count(*) as exists FROM guser WHERE username = $1 AND password = MD5($2)", [username, password])
             .then(data => {
-                console.log(data);
                 if(data.exists > 0) {
                     request.session.user = username;
                     response.redirect('/');

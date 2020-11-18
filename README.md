@@ -1,11 +1,12 @@
-# user
+# User
 
 ## Features
 * Basic login.
 * Docker with database in postgresql.
 * Use express framework.
+* Proxy
 
-## start 
+## Start 
 
 ### Docker with postgres
 
@@ -17,9 +18,10 @@ cd resources
 ### Express
 
 ```
+npm install
 npm run start
 ```
 
 ## Next features
 
-* add proxy
+* https 
