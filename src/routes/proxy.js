@@ -4,7 +4,7 @@ const proxy = require('express-http-proxy');
 const router = require('express').Router();
 
 const sites = [
-    {name: '/chat', url: 'http://localhost:8100'}
+    {name: '/chat', url: 'http://localhost:4200'}
 ];
 
 sites.forEach(site => {

@@ -6,3 +6,4 @@
 * Login function
 * Logout function 
 * Proxy function
+* Read db password from pass

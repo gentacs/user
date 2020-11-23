@@ -1,8 +1,8 @@
 'use strict';
 
 const pgp = require('pg-promise')();
-const user = 'postgres';
-const password = 'mysecretpassword';
+const user = 'guseruser';
+const password = process.env.PG_PASS;
 const host = 'localhost';
 const port = '5432';
 const database = 'guser';
