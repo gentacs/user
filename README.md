@@ -2,6 +2,7 @@
 
 ## Features
 * Basic login.
+* Endpoint return user information.
 * Docker with database in postgresql.
 * Use express framework.
 * Proxy

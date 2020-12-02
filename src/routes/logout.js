@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 router.route('/')
-    .get((request, response) => {
+    .post((request, response) => {
         request.session.user = null;
         response.redirect('/');
     });

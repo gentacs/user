@@ -5,6 +5,7 @@ const session = require('express-session');
 const port = 8000;
 const login = require('./routes/login');
 const logout = require('./routes/logout');
+const users = require('./routes/users');
 const path = require('path');
 const bodyParser = require('body-parser');
 const proxy = require('./routes/proxy');
@@ -19,6 +20,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 
 app.use('/login', login);
 app.use('/logout', logout);
+app.use('/users', users);
 
 app.use('/', proxy);
 
