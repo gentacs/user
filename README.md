@@ -4,6 +4,7 @@
 * Basic login.
 * Endpoint return user information.
 * Docker with database in postgresql.
+* Build for arm64 architecture
 * Use express framework.
 * Proxy
 

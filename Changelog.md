@@ -4,6 +4,7 @@
 * Endpoint with basic data of connected user.
 * Database creation script.
 * Script for start docker with postgres.
+* Script for build docker to deploy on arm64
 * Login function.
 * Logout function. 
 * Proxy function.

@@ -1,5 +1,8 @@
 'use strict';
 
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
 const app = require('express')();
 const session = require('express-session');
 const port = 8000;
@@ -17,6 +20,9 @@ app.use(session({
 }));
 
 app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.json());
+app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
+app.use(bodyParser.text({ type: 'text/html' }));
 
 app.use('/login', login);
 app.use('/logout', logout);
